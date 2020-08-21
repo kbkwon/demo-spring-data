@@ -1,0 +1,9 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: "jdbc:postgresql://192.168.053:5432/psm"
+    username: psm
+    password: psm123
