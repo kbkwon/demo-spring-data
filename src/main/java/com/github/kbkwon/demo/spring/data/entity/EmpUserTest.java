@@ -13,7 +13,7 @@ public class EmpUserTest {
     @Id
     private String no;
 
-    @Column
+    @Column(unique = true, length = 1024, nullable = false)
     private String name;
 
     @Column
@@ -21,5 +21,8 @@ public class EmpUserTest {
 
     @Column
     private String sex;
+
+    @Column
+    private int grade;
 
 }
